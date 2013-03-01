@@ -19,6 +19,12 @@
 		32192D0F16BFC6FD00F300DE /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32192D0D16BFC6FD00F300DE /* MainStoryboard_iPhone.storyboard */; };
 		32192D1216BFC6FD00F300DE /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32192D1016BFC6FD00F300DE /* MainStoryboard_iPad.storyboard */; };
 		32192D1516BFC6FD00F300DE /* GMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32192D1416BFC6FD00F300DE /* GMViewController.m */; };
+		32192D2E16BFC75D00F300DE /* test.gif in Resources */ = {isa = PBXBuildFile; fileRef = 32192D2316BFC75D00F300DE /* test.gif */; };
+		32192D2F16BFC75D00F300DE /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 32192D2516BFC75D00F300DE /* UIImage+animatedGIF.m */; };
+		32192D3416BFC83E00F300DE /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32192D3216BFC83E00F300DE /* CoreImage.framework */; };
+		32192D3516BFC83E00F300DE /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32192D3316BFC83E00F300DE /* ImageIO.framework */; };
+		32192D5316BFD07700F300DE /* AnimatedGif.m in Sources */ = {isa = PBXBuildFile; fileRef = 32192D4216BFD07700F300DE /* AnimatedGif.m */; };
+		32F31C0B16BFEE6F00DEA4B7 /* GMImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F31C0A16BFEE6F00DEA4B7 /* GMImage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +45,15 @@
 		32192D1116BFC6FD00F300DE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		32192D1316BFC6FD00F300DE /* GMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GMViewController.h; sourceTree = "<group>"; };
 		32192D1416BFC6FD00F300DE /* GMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GMViewController.m; sourceTree = "<group>"; };
+		32192D2316BFC75D00F300DE /* test.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = test.gif; sourceTree = "<group>"; };
+		32192D2416BFC75D00F300DE /* UIImage+animatedGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+animatedGIF.h"; sourceTree = "<group>"; };
+		32192D2516BFC75D00F300DE /* UIImage+animatedGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+animatedGIF.m"; sourceTree = "<group>"; };
+		32192D3216BFC83E00F300DE /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		32192D3316BFC83E00F300DE /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		32192D4116BFD07700F300DE /* AnimatedGif.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AnimatedGif.h; path = Classes/AnimatedGif.h; sourceTree = "<group>"; };
+		32192D4216BFD07700F300DE /* AnimatedGif.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AnimatedGif.m; path = Classes/AnimatedGif.m; sourceTree = "<group>"; };
+		32F31C0916BFEE6F00DEA4B7 /* GMImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMImage.h; sourceTree = "<group>"; };
+		32F31C0A16BFEE6F00DEA4B7 /* GMImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMImage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +61,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32192D3416BFC83E00F300DE /* CoreImage.framework in Frameworks */,
+				32192D3516BFC83E00F300DE /* ImageIO.framework in Frameworks */,
 				32192CF616BFC6FD00F300DE /* UIKit.framework in Frameworks */,
 				32192CF816BFC6FD00F300DE /* Foundation.framework in Frameworks */,
 				32192CFA16BFC6FD00F300DE /* CoreGraphics.framework in Frameworks */,
@@ -75,6 +92,8 @@
 		32192CF416BFC6FD00F300DE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				32192D3216BFC83E00F300DE /* CoreImage.framework */,
+				32192D3316BFC83E00F300DE /* ImageIO.framework */,
 				32192CF516BFC6FD00F300DE /* UIKit.framework */,
 				32192CF716BFC6FD00F300DE /* Foundation.framework */,
 				32192CF916BFC6FD00F300DE /* CoreGraphics.framework */,
@@ -91,6 +110,10 @@
 				32192D1016BFC6FD00F300DE /* MainStoryboard_iPad.storyboard */,
 				32192D1316BFC6FD00F300DE /* GMViewController.h */,
 				32192D1416BFC6FD00F300DE /* GMViewController.m */,
+				32F31C0916BFEE6F00DEA4B7 /* GMImage.h */,
+				32F31C0A16BFEE6F00DEA4B7 /* GMImage.m */,
+				32192D3616BFD07700F300DE /* iOS_AnimatedGif-master */,
+				32192D1B16BFC75D00F300DE /* uiimage-from-animated-gif */,
 				32192CFC16BFC6FD00F300DE /* Supporting Files */,
 			);
 			path = "Gif of the Magi";
@@ -108,6 +131,25 @@
 				32192D0B16BFC6FD00F300DE /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		32192D1B16BFC75D00F300DE /* uiimage-from-animated-gif */ = {
+			isa = PBXGroup;
+			children = (
+				32192D2316BFC75D00F300DE /* test.gif */,
+				32192D2416BFC75D00F300DE /* UIImage+animatedGIF.h */,
+				32192D2516BFC75D00F300DE /* UIImage+animatedGIF.m */,
+			);
+			path = "uiimage-from-animated-gif";
+			sourceTree = "<group>";
+		};
+		32192D3616BFD07700F300DE /* iOS_AnimatedGif-master */ = {
+			isa = PBXGroup;
+			children = (
+				32192D4116BFD07700F300DE /* AnimatedGif.h */,
+				32192D4216BFD07700F300DE /* AnimatedGif.m */,
+			);
+			path = "iOS_AnimatedGif-master";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +210,7 @@
 				32192D0C16BFC6FD00F300DE /* Default-568h@2x.png in Resources */,
 				32192D0F16BFC6FD00F300DE /* MainStoryboard_iPhone.storyboard in Resources */,
 				32192D1216BFC6FD00F300DE /* MainStoryboard_iPad.storyboard in Resources */,
+				32192D2E16BFC75D00F300DE /* test.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +224,9 @@
 				32192D0216BFC6FD00F300DE /* main.m in Sources */,
 				32192D0616BFC6FD00F300DE /* GMAppDelegate.m in Sources */,
 				32192D1516BFC6FD00F300DE /* GMViewController.m in Sources */,
+				32192D2F16BFC75D00F300DE /* UIImage+animatedGIF.m in Sources */,
+				32192D5316BFD07700F300DE /* AnimatedGif.m in Sources */,
+				32F31C0B16BFEE6F00DEA4B7 /* GMImage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +314,7 @@
 		32192D1916BFC6FD00F300DE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Gif of the Magi/Gif of the Magi-Prefix.pch";
 				INFOPLIST_FILE = "Gif of the Magi/Gif of the Magi-Info.plist";
@@ -279,6 +326,7 @@
 		32192D1A16BFC6FD00F300DE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Gif of the Magi/Gif of the Magi-Prefix.pch";
 				INFOPLIST_FILE = "Gif of the Magi/Gif of the Magi-Info.plist";
@@ -306,6 +354,7 @@
 				32192D1A16BFC6FD00F300DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,18 +7,13 @@
 //
 
 #import "GMImage.h"
-#import "UIImage+animatedGIF.h"
-
 
 @implementation GMImage
 
 @synthesize url;
-@synthesize duration;
-@synthesize image;
-@synthesize data;
 @synthesize height;
 @synthesize width;
-
+@synthesize html;
 
 -(id)initWithDictionary:(NSDictionary *)dict{
     self = [super init];
@@ -26,9 +21,7 @@
         self.url = [NSURL URLWithString:[dict objectForKey:@"url"]];
         self.height = [[dict objectForKey:@"y"] intValue];
         self.width = [[dict objectForKey:@"x"] intValue];
-            //self.duration = [[dict objectForKey:@"duration"] floatValue];
-            //self.data = [NSData dataWithContentsOfURL:self.url];
-            //self.image = [UIImage animatedImageWithAnimatedGIFData:self.data duration:self.duration];
+        self.html = [NSString stringWithFormat:@"<img src='%@' />",self.url.description];
     }
     return self;
 }

@@ -11,13 +11,9 @@
 @interface GMImage : NSObject
 
 @property (nonatomic, strong) NSURL *url;
-@property (assign) float duration;
-@property (nonatomic, strong) UIImage *image;
-@property (nonatomic, strong) NSData *data;
-@property (nonatomic, strong) UIImageView *imageView;
 @property (assign) int width;
 @property (assign) int height;
-
+@property (nonatomic,strong) NSString *html;
 
 -(id)initWithDictionary:(NSDictionary *)dict;
 

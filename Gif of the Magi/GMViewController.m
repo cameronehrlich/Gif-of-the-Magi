@@ -7,7 +7,6 @@
     //
 
 #import "GMViewController.h"
-#import "UIImage+animatedGIF.h"
 #import "GMImage.h"
 
 @implementation GMViewController{
@@ -45,20 +44,13 @@
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
     }
-     
-//    UIImageView *av = [[UIImageView alloc] initWithFrame:CGRectMake(0 , 0, cell.contentView.frame.size.width,cell.contentView.frame.size.height)];
-//    av.backgroundColor = [UIColor clearColor];
-//    av.opaque = NO;
-//    av.image = [(GMImage*)[images objectAtIndex:indexPath.row] image];
-//    [av setContentMode:UIViewContentModeScaleAspectFit];
-//    cell.backgroundView = av;
-//
-    GMImage *tmp = [images objectAtIndex:indexPath.row];
+    
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    UIWebView *webView = [[UIWebView alloc] initWithFrame:CGRectMake(0 , 0, tmp.width, tmp.height)];
+    UIWebView *webView = [[UIWebView alloc] initWithFrame:CGRectMake(0 , 0, cell.contentView.frame.size.width, cell.contentView.frame.size.height)];
     [webView setScalesPageToFit:YES];
     [webView setUserInteractionEnabled:NO];
     [webView loadRequest:[NSURLRequest requestWithURL:[[images objectAtIndex:indexPath.row] url]]];
+    [webView loadHTMLString:[[images objectAtIndex:indexPath.row] html] baseURL:nil];
     [cell setBackgroundView:webView];
     
     return cell;
@@ -74,7 +66,7 @@
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return [[images objectAtIndex:indexPath.row] height];
+    return 100;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{

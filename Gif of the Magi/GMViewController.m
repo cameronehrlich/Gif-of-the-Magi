@@ -22,7 +22,11 @@
     [super viewDidLoad];
     NSURL *url = [NSURL URLWithString:@"http://www.graphative.com/gifs/pre.txt"];
     
+    
+    
     NSData *jsonData = [NSData dataWithContentsOfURL:url];
+    
+//    NSLog(@"%@", jsonData.description);
     
     NSError *e = nil;
     jsonArray = [NSJSONSerialization JSONObjectWithData:jsonData options: NSJSONReadingMutableContainers error: &e];
@@ -75,6 +79,8 @@
     
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"copied" message:@"This gif has been copied to the clipboad!" delegate:self cancelButtonTitle:@"okay" otherButtonTitles:nil, nil];
     [alert show];
+    
+    
 }
 
 

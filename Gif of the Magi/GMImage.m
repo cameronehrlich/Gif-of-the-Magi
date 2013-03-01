@@ -21,7 +21,10 @@
         self.url = [NSURL URLWithString:[dict objectForKey:@"url"]];
         self.height = [[dict objectForKey:@"y"] intValue];
         self.width = [[dict objectForKey:@"x"] intValue];
-        self.html = [NSString stringWithFormat:@"<img src='%@' />",self.url.description];
+        
+        NSLog(@"width:%d, height:%d", self.width, self.height);
+        
+        self.html = [NSString stringWithFormat:@"<center><img style='width:100&#037;' src='%@' /></center>",self.url.description];
     }
     return self;
 }

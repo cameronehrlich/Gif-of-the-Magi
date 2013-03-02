@@ -17,10 +17,16 @@
 		32192D0A16BFC6FD00F300DE /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 32192D0916BFC6FD00F300DE /* Default@2x.png */; };
 		32192D0C16BFC6FD00F300DE /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 32192D0B16BFC6FD00F300DE /* Default-568h@2x.png */; };
 		32192D0F16BFC6FD00F300DE /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32192D0D16BFC6FD00F300DE /* MainStoryboard_iPhone.storyboard */; };
-		32192D1216BFC6FD00F300DE /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32192D1016BFC6FD00F300DE /* MainStoryboard_iPad.storyboard */; };
-		32192D1516BFC6FD00F300DE /* GMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32192D1416BFC6FD00F300DE /* GMViewController.m */; };
 		32192D3416BFC83E00F300DE /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32192D3216BFC83E00F300DE /* CoreImage.framework */; };
-		32192D3516BFC83E00F300DE /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32192D3316BFC83E00F300DE /* ImageIO.framework */; };
+		325DC3C216E1A67200A0BB3C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 325DC3C116E1A67200A0BB3C /* QuartzCore.framework */; };
+		325DC3C816E1A78D00A0BB3C /* GMCarouselViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 325DC3C716E1A78D00A0BB3C /* GMCarouselViewController.m */; };
+		325DC3CC16E1B63900A0BB3C /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 325DC3CB16E1B63900A0BB3C /* background.png */; };
+		325DC3D316E1CB2900A0BB3C /* next.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 325DC3D116E1CB2900A0BB3C /* next.tiff */; };
+		325DC3D416E1CB2900A0BB3C /* prev.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 325DC3D216E1CB2900A0BB3C /* prev.tiff */; };
+		327DB4F116E1A07D005CE875 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 327DB4F016E1A07D005CE875 /* iCarousel.m */; };
+		32963C4216E20A1A00F7FC12 /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 32963C4116E20A1A00F7FC12 /* Model.m */; };
+		32963C4516E20E6A00F7FC12 /* GMFavoritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32963C4416E20E6A00F7FC12 /* GMFavoritesViewController.m */; };
+		32963C4716E21D3700F7FC12 /* Star-Graphic.png in Resources */ = {isa = PBXBuildFile; fileRef = 32963C4616E21D3700F7FC12 /* Star-Graphic.png */; };
 		32F31C0B16BFEE6F00DEA4B7 /* GMImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F31C0A16BFEE6F00DEA4B7 /* GMImage.m */; };
 /* End PBXBuildFile section */
 
@@ -39,11 +45,22 @@
 		32192D0916BFC6FD00F300DE /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		32192D0B16BFC6FD00F300DE /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		32192D0E16BFC6FD00F300DE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
-		32192D1116BFC6FD00F300DE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		32192D1316BFC6FD00F300DE /* GMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GMViewController.h; sourceTree = "<group>"; };
-		32192D1416BFC6FD00F300DE /* GMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GMViewController.m; sourceTree = "<group>"; };
 		32192D3216BFC83E00F300DE /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		32192D3316BFC83E00F300DE /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		325DC3C116E1A67200A0BB3C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		325DC3C616E1A78D00A0BB3C /* GMCarouselViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMCarouselViewController.h; sourceTree = "<group>"; };
+		325DC3C716E1A78D00A0BB3C /* GMCarouselViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMCarouselViewController.m; sourceTree = "<group>"; };
+		325DC3CB16E1B63900A0BB3C /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		325DC3D116E1CB2900A0BB3C /* next.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = next.tiff; sourceTree = "<group>"; };
+		325DC3D216E1CB2900A0BB3C /* prev.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = prev.tiff; sourceTree = "<group>"; };
+		327DB4EF16E1A07D005CE875 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
+		327DB4F016E1A07D005CE875 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
+		32963C3B16E204C600F7FC12 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		32963C4016E20A1A00F7FC12 /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		32963C4116E20A1A00F7FC12 /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
+		32963C4316E20E6A00F7FC12 /* GMFavoritesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMFavoritesViewController.h; sourceTree = "<group>"; };
+		32963C4416E20E6A00F7FC12 /* GMFavoritesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMFavoritesViewController.m; sourceTree = "<group>"; };
+		32963C4616E21D3700F7FC12 /* Star-Graphic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Star-Graphic.png"; sourceTree = "<group>"; };
 		32F31C0916BFEE6F00DEA4B7 /* GMImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMImage.h; sourceTree = "<group>"; };
 		32F31C0A16BFEE6F00DEA4B7 /* GMImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMImage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -53,8 +70,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				325DC3C216E1A67200A0BB3C /* QuartzCore.framework in Frameworks */,
 				32192D3416BFC83E00F300DE /* CoreImage.framework in Frameworks */,
-				32192D3516BFC83E00F300DE /* ImageIO.framework in Frameworks */,
 				32192CF616BFC6FD00F300DE /* UIKit.framework in Frameworks */,
 				32192CF816BFC6FD00F300DE /* Foundation.framework in Frameworks */,
 				32192CFA16BFC6FD00F300DE /* CoreGraphics.framework in Frameworks */,
@@ -84,6 +101,8 @@
 		32192CF416BFC6FD00F300DE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				32963C3B16E204C600F7FC12 /* AssetsLibrary.framework */,
+				325DC3C116E1A67200A0BB3C /* QuartzCore.framework */,
 				32192D3216BFC83E00F300DE /* CoreImage.framework */,
 				32192D3316BFC83E00F300DE /* ImageIO.framework */,
 				32192CF516BFC6FD00F300DE /* UIKit.framework */,
@@ -96,14 +115,20 @@
 		32192CFB16BFC6FD00F300DE /* Gif of the Magi */ = {
 			isa = PBXGroup;
 			children = (
+				32963C4016E20A1A00F7FC12 /* Model.h */,
+				32963C4116E20A1A00F7FC12 /* Model.m */,
+				32192D0D16BFC6FD00F300DE /* MainStoryboard_iPhone.storyboard */,
 				32192D0416BFC6FD00F300DE /* GMAppDelegate.h */,
 				32192D0516BFC6FD00F300DE /* GMAppDelegate.m */,
-				32192D0D16BFC6FD00F300DE /* MainStoryboard_iPhone.storyboard */,
-				32192D1016BFC6FD00F300DE /* MainStoryboard_iPad.storyboard */,
-				32192D1316BFC6FD00F300DE /* GMViewController.h */,
-				32192D1416BFC6FD00F300DE /* GMViewController.m */,
+				325DC3C616E1A78D00A0BB3C /* GMCarouselViewController.h */,
+				325DC3C716E1A78D00A0BB3C /* GMCarouselViewController.m */,
+				32963C4316E20E6A00F7FC12 /* GMFavoritesViewController.h */,
+				32963C4416E20E6A00F7FC12 /* GMFavoritesViewController.m */,
 				32F31C0916BFEE6F00DEA4B7 /* GMImage.h */,
 				32F31C0A16BFEE6F00DEA4B7 /* GMImage.m */,
+				327DB4EF16E1A07D005CE875 /* iCarousel.h */,
+				327DB4F016E1A07D005CE875 /* iCarousel.m */,
+				325DC3D516E1CFD600A0BB3C /* Images */,
 				32192CFC16BFC6FD00F300DE /* Supporting Files */,
 			);
 			path = "Gif of the Magi";
@@ -121,6 +146,17 @@
 				32192D0B16BFC6FD00F300DE /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		325DC3D516E1CFD600A0BB3C /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				32963C4616E21D3700F7FC12 /* Star-Graphic.png */,
+				325DC3CB16E1B63900A0BB3C /* background.png */,
+				325DC3D116E1CB2900A0BB3C /* next.tiff */,
+				325DC3D216E1CB2900A0BB3C /* prev.tiff */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,7 +216,10 @@
 				32192D0A16BFC6FD00F300DE /* Default@2x.png in Resources */,
 				32192D0C16BFC6FD00F300DE /* Default-568h@2x.png in Resources */,
 				32192D0F16BFC6FD00F300DE /* MainStoryboard_iPhone.storyboard in Resources */,
-				32192D1216BFC6FD00F300DE /* MainStoryboard_iPad.storyboard in Resources */,
+				325DC3CC16E1B63900A0BB3C /* background.png in Resources */,
+				325DC3D316E1CB2900A0BB3C /* next.tiff in Resources */,
+				325DC3D416E1CB2900A0BB3C /* prev.tiff in Resources */,
+				32963C4716E21D3700F7FC12 /* Star-Graphic.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,8 +232,11 @@
 			files = (
 				32192D0216BFC6FD00F300DE /* main.m in Sources */,
 				32192D0616BFC6FD00F300DE /* GMAppDelegate.m in Sources */,
-				32192D1516BFC6FD00F300DE /* GMViewController.m in Sources */,
 				32F31C0B16BFEE6F00DEA4B7 /* GMImage.m in Sources */,
+				327DB4F116E1A07D005CE875 /* iCarousel.m in Sources */,
+				325DC3C816E1A78D00A0BB3C /* GMCarouselViewController.m in Sources */,
+				32963C4216E20A1A00F7FC12 /* Model.m in Sources */,
+				32963C4516E20E6A00F7FC12 /* GMFavoritesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,14 +257,6 @@
 				32192D0E16BFC6FD00F300DE /* en */,
 			);
 			name = MainStoryboard_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		32192D1016BFC6FD00F300DE /* MainStoryboard_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				32192D1116BFC6FD00F300DE /* en */,
-			);
-			name = MainStoryboard_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -286,7 +320,12 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Gif of the Magi/Gif of the Magi-Prefix.pch";
 				INFOPLIST_FILE = "Gif of the Magi/Gif of the Magi-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SDKROOT)/usr/lib/system\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -298,7 +337,12 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Gif of the Magi/Gif of the Magi-Prefix.pch";
 				INFOPLIST_FILE = "Gif of the Magi/Gif of the Magi-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SDKROOT)/usr/lib/system\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

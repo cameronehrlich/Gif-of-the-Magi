@@ -18,15 +18,12 @@
 		32192D0C16BFC6FD00F300DE /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 32192D0B16BFC6FD00F300DE /* Default-568h@2x.png */; };
 		32192D0F16BFC6FD00F300DE /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32192D0D16BFC6FD00F300DE /* MainStoryboard_iPhone.storyboard */; };
 		32192D3416BFC83E00F300DE /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32192D3216BFC83E00F300DE /* CoreImage.framework */; };
+		3248DD0F16FBDC9300BA8EB1 /* GMMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3248DD0E16FBDC9300BA8EB1 /* GMMainViewController.m */; };
 		325DC3C216E1A67200A0BB3C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 325DC3C116E1A67200A0BB3C /* QuartzCore.framework */; };
-		325DC3C816E1A78D00A0BB3C /* GMCarouselViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 325DC3C716E1A78D00A0BB3C /* GMCarouselViewController.m */; };
-		325DC3CC16E1B63900A0BB3C /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 325DC3CB16E1B63900A0BB3C /* background.png */; };
-		325DC3D316E1CB2900A0BB3C /* next.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 325DC3D116E1CB2900A0BB3C /* next.tiff */; };
-		325DC3D416E1CB2900A0BB3C /* prev.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 325DC3D216E1CB2900A0BB3C /* prev.tiff */; };
-		327DB4F116E1A07D005CE875 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 327DB4F016E1A07D005CE875 /* iCarousel.m */; };
+		325F6584170148BC00825403 /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 325F6583170148BC00825403 /* UIImage+animatedGIF.m */; };
+		325F658517014B0F00825403 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32192D3316BFC83E00F300DE /* ImageIO.framework */; };
+		325F658717014D6200825403 /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 325F658617014D6200825403 /* placeholder.png */; };
 		32963C4216E20A1A00F7FC12 /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 32963C4116E20A1A00F7FC12 /* Model.m */; };
-		32963C4516E20E6A00F7FC12 /* GMFavoritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32963C4416E20E6A00F7FC12 /* GMFavoritesViewController.m */; };
-		32963C4716E21D3700F7FC12 /* Star-Graphic.png in Resources */ = {isa = PBXBuildFile; fileRef = 32963C4616E21D3700F7FC12 /* Star-Graphic.png */; };
 		32F31C0B16BFEE6F00DEA4B7 /* GMImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F31C0A16BFEE6F00DEA4B7 /* GMImage.m */; };
 /* End PBXBuildFile section */
 
@@ -47,20 +44,14 @@
 		32192D0E16BFC6FD00F300DE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		32192D3216BFC83E00F300DE /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		32192D3316BFC83E00F300DE /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		3248DD0D16FBDC9300BA8EB1 /* GMMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMMainViewController.h; sourceTree = "<group>"; };
+		3248DD0E16FBDC9300BA8EB1 /* GMMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMMainViewController.m; sourceTree = "<group>"; };
 		325DC3C116E1A67200A0BB3C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		325DC3C616E1A78D00A0BB3C /* GMCarouselViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMCarouselViewController.h; sourceTree = "<group>"; };
-		325DC3C716E1A78D00A0BB3C /* GMCarouselViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMCarouselViewController.m; sourceTree = "<group>"; };
-		325DC3CB16E1B63900A0BB3C /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
-		325DC3D116E1CB2900A0BB3C /* next.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = next.tiff; sourceTree = "<group>"; };
-		325DC3D216E1CB2900A0BB3C /* prev.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = prev.tiff; sourceTree = "<group>"; };
-		327DB4EF16E1A07D005CE875 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
-		327DB4F016E1A07D005CE875 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
-		32963C3B16E204C600F7FC12 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		325F6582170148BC00825403 /* UIImage+animatedGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+animatedGIF.h"; sourceTree = "<group>"; };
+		325F6583170148BC00825403 /* UIImage+animatedGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+animatedGIF.m"; sourceTree = "<group>"; };
+		325F658617014D6200825403 /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
 		32963C4016E20A1A00F7FC12 /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
 		32963C4116E20A1A00F7FC12 /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
-		32963C4316E20E6A00F7FC12 /* GMFavoritesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMFavoritesViewController.h; sourceTree = "<group>"; };
-		32963C4416E20E6A00F7FC12 /* GMFavoritesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMFavoritesViewController.m; sourceTree = "<group>"; };
-		32963C4616E21D3700F7FC12 /* Star-Graphic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Star-Graphic.png"; sourceTree = "<group>"; };
 		32F31C0916BFEE6F00DEA4B7 /* GMImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMImage.h; sourceTree = "<group>"; };
 		32F31C0A16BFEE6F00DEA4B7 /* GMImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMImage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				325F658517014B0F00825403 /* ImageIO.framework in Frameworks */,
 				325DC3C216E1A67200A0BB3C /* QuartzCore.framework in Frameworks */,
 				32192D3416BFC83E00F300DE /* CoreImage.framework in Frameworks */,
 				32192CF616BFC6FD00F300DE /* UIKit.framework in Frameworks */,
@@ -101,10 +93,9 @@
 		32192CF416BFC6FD00F300DE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				32963C3B16E204C600F7FC12 /* AssetsLibrary.framework */,
+				32192D3316BFC83E00F300DE /* ImageIO.framework */,
 				325DC3C116E1A67200A0BB3C /* QuartzCore.framework */,
 				32192D3216BFC83E00F300DE /* CoreImage.framework */,
-				32192D3316BFC83E00F300DE /* ImageIO.framework */,
 				32192CF516BFC6FD00F300DE /* UIKit.framework */,
 				32192CF716BFC6FD00F300DE /* Foundation.framework */,
 				32192CF916BFC6FD00F300DE /* CoreGraphics.framework */,
@@ -115,19 +106,9 @@
 		32192CFB16BFC6FD00F300DE /* Gif of the Magi */ = {
 			isa = PBXGroup;
 			children = (
-				32963C4016E20A1A00F7FC12 /* Model.h */,
-				32963C4116E20A1A00F7FC12 /* Model.m */,
 				32192D0D16BFC6FD00F300DE /* MainStoryboard_iPhone.storyboard */,
-				32192D0416BFC6FD00F300DE /* GMAppDelegate.h */,
-				32192D0516BFC6FD00F300DE /* GMAppDelegate.m */,
-				325DC3C616E1A78D00A0BB3C /* GMCarouselViewController.h */,
-				325DC3C716E1A78D00A0BB3C /* GMCarouselViewController.m */,
-				32963C4316E20E6A00F7FC12 /* GMFavoritesViewController.h */,
-				32963C4416E20E6A00F7FC12 /* GMFavoritesViewController.m */,
-				32F31C0916BFEE6F00DEA4B7 /* GMImage.h */,
-				32F31C0A16BFEE6F00DEA4B7 /* GMImage.m */,
-				327DB4EF16E1A07D005CE875 /* iCarousel.h */,
-				327DB4F016E1A07D005CE875 /* iCarousel.m */,
+				3248DD0C16FBDBD700BA8EB1 /* Classes */,
+				3248DD1016FBDEA200BA8EB1 /* Controllers */,
 				325DC3D516E1CFD600A0BB3C /* Images */,
 				32192CFC16BFC6FD00F300DE /* Supporting Files */,
 			);
@@ -148,13 +129,34 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		3248DD0C16FBDBD700BA8EB1 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				32192D0416BFC6FD00F300DE /* GMAppDelegate.h */,
+				32192D0516BFC6FD00F300DE /* GMAppDelegate.m */,
+				32963C4016E20A1A00F7FC12 /* Model.h */,
+				32963C4116E20A1A00F7FC12 /* Model.m */,
+				32F31C0916BFEE6F00DEA4B7 /* GMImage.h */,
+				32F31C0A16BFEE6F00DEA4B7 /* GMImage.m */,
+				325F6582170148BC00825403 /* UIImage+animatedGIF.h */,
+				325F6583170148BC00825403 /* UIImage+animatedGIF.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		3248DD1016FBDEA200BA8EB1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3248DD0D16FBDC9300BA8EB1 /* GMMainViewController.h */,
+				3248DD0E16FBDC9300BA8EB1 /* GMMainViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		325DC3D516E1CFD600A0BB3C /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				32963C4616E21D3700F7FC12 /* Star-Graphic.png */,
-				325DC3CB16E1B63900A0BB3C /* background.png */,
-				325DC3D116E1CB2900A0BB3C /* next.tiff */,
-				325DC3D216E1CB2900A0BB3C /* prev.tiff */,
+				325F658617014D6200825403 /* placeholder.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -216,10 +218,7 @@
 				32192D0A16BFC6FD00F300DE /* Default@2x.png in Resources */,
 				32192D0C16BFC6FD00F300DE /* Default-568h@2x.png in Resources */,
 				32192D0F16BFC6FD00F300DE /* MainStoryboard_iPhone.storyboard in Resources */,
-				325DC3CC16E1B63900A0BB3C /* background.png in Resources */,
-				325DC3D316E1CB2900A0BB3C /* next.tiff in Resources */,
-				325DC3D416E1CB2900A0BB3C /* prev.tiff in Resources */,
-				32963C4716E21D3700F7FC12 /* Star-Graphic.png in Resources */,
+				325F658717014D6200825403 /* placeholder.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,10 +232,9 @@
 				32192D0216BFC6FD00F300DE /* main.m in Sources */,
 				32192D0616BFC6FD00F300DE /* GMAppDelegate.m in Sources */,
 				32F31C0B16BFEE6F00DEA4B7 /* GMImage.m in Sources */,
-				327DB4F116E1A07D005CE875 /* iCarousel.m in Sources */,
-				325DC3C816E1A78D00A0BB3C /* GMCarouselViewController.m in Sources */,
 				32963C4216E20A1A00F7FC12 /* Model.m in Sources */,
-				32963C4516E20E6A00F7FC12 /* GMFavoritesViewController.m in Sources */,
+				3248DD0F16FBDC9300BA8EB1 /* GMMainViewController.m in Sources */,
+				325F6584170148BC00825403 /* UIImage+animatedGIF.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

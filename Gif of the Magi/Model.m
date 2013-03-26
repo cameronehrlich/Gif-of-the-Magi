@@ -7,40 +7,21 @@
 //
 
 #import "Model.h"
-#import <AssetsLibrary/AssetsLibrary.h>
-#import <dispatch/dispatch.h>
 #import <Foundation/Foundation.h>
 #import "GMImage.h"
 
-@implementation Model
-
-@synthesize images;
-@synthesize favorites;
+static NSString *URL = @"http://aqueous-sea-9794.herokuapp.com/retrieve.json";
+//static NSString *URL = @"http://cam.local:3000/retrieve.json";
 
 
-static Model *modelSingleton = nil;
-
-- (id)init {
-    if (self = [super init]) {
-        NSURL *url = [NSURL URLWithString:@"http://www.graphative.com/gifs/index.php"];
-        
-        NSData *jsonData = [NSData dataWithContentsOfURL:url];
-        
-        NSError *e = nil;
-        NSArray *jsonArray = [NSJSONSerialization JSONObjectWithData:jsonData options: NSJSONReadingMutableContainers error: &e];
-        
-        images = [[NSMutableArray alloc] init];
-        
-        for(NSDictionary *item in jsonArray) {
-            GMImage *newImg = [[GMImage alloc] initWithDictionary:item];
-            [images addObject:newImg];
-        }
-        
-        favorites = [NSMutableArray arrayWithArray:[NSKeyedUnarchiver unarchiveObjectWithData:[[NSUserDefaults standardUserDefaults] objectForKey:@"favorites"]]];
-    }
-    return self;
+@implementation Model{
+@private
+    NSOperationQueue *queue;
 }
 
+@synthesize images;
+
+static Model *modelSingleton = nil;
 
 + (id)sharedModel {
     static dispatch_once_t onceToken;
@@ -50,18 +31,41 @@ static Model *modelSingleton = nil;
     return modelSingleton;
 }
 
+- (id)init {
+    if (self = [super init]) {
+        
+        NSData *jsonData = [NSData dataWithContentsOfURL:[NSURL URLWithString:URL]];
+        
+        NSError *e = nil;
+        NSMutableArray *jsonArray = [NSJSONSerialization JSONObjectWithData:jsonData options: NSJSONReadingMutableContainers error: &e];
+        if (e) NSLog(@"%@",e.description);
+        
+        images = [[NSMutableArray alloc] init];
+        queue = [[NSOperationQueue alloc] init];
+        
+        [queue setMaxConcurrentOperationCount:NSOperationQueueDefaultMaxConcurrentOperationCount];
 
--(void)addToFavorites:(GMImage *)img{
-    [favorites addObject:img];
-    [[NSUserDefaults standardUserDefaults] setObject:[NSKeyedArchiver archivedDataWithRootObject:favorites] forKey:@"favorites"];
-    [[NSUserDefaults standardUserDefaults] synchronize];
+        int count = 0;
+        for(NSString *item in jsonArray) {
+            if (count == 12) {break;}
+            
+            [queue addOperationWithBlock:^{
+                GMImage *image = [[GMImage alloc] initWithURLString:item];
+                [images replaceObjectAtIndex:count withObject:image];
+                [self notifyWithNumber:count];
+            }];
+            
+            [images addObject:[[GMImage alloc] init]];
+            count++;
+        }
+    }
+    return self;
 }
 
--(void)removeItemFromFavoritesAtIndex:(int)index{
-    [self.favorites removeObjectAtIndex:index];
-    [[NSUserDefaults standardUserDefaults] setObject:[NSKeyedArchiver archivedDataWithRootObject:favorites] forKey:@"favorites"];
-    [[NSUserDefaults standardUserDefaults] synchronize];
-    
+-(void)notifyWithNumber:(int)num{
+    dispatch_sync(dispatch_get_main_queue(), ^{
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"newImage" object:[NSNumber numberWithInt:num]];
+    });
 }
 
 @end

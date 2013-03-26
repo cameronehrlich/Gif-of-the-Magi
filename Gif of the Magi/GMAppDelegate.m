@@ -7,6 +7,7 @@
 //
 
 #import "GMAppDelegate.h"
+#import "Model.h"
 
 @implementation GMAppDelegate
 

@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "GMImage.h"
+#import "UIImage+animatedGIF.h"
 
 @interface Model : NSObject
 
@@ -15,8 +16,5 @@
 @property (strong, nonatomic) NSMutableArray *favorites;
 
 + (id)sharedModel;
-
--(void)addToFavorites:(GMImage *)url;
--(void)removeItemFromFavoritesAtIndex:(int)index;
 
 @end

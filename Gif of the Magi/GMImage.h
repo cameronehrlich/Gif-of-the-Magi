@@ -8,14 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
-@interface GMImage : NSObject 
+@interface GMImage : NSObject
 
-@property (nonatomic, strong) NSURL *url;
-@property (nonatomic,strong) NSString *html;
+@property (nonatomic, strong) NSData *imageData;
+@property (nonatomic, strong) UIImage *image;
 
-- (id)initWithDictionary:(NSDictionary *)dict;
-- (void)encodeWithCoder:(NSCoder *)encoder;
-
+- (id)  init;
+- (id)  initWithURLString:(NSString *)str;
 
 @end
 
